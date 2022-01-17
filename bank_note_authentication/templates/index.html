@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Bank Note Authentication</h1>
+    <h3 style="text-align: center">Akshay Jadhav</h3>
+
+    <div class="form">
+        <form action="/predict" method="POST">
+            <input type="number" name="variance" id="variance" placeholder="variance">
+            <input type="number" name="skewness" id="skewness" placeholder="skewness">
+            <input type="number" name="curtosis" id="curtosis" placeholder="curtosis">
+            <input type="number" name="entropy" id="entropy" placeholder="entropy">
+
+</select>
+            <input type="submit" value="Check">
+        </form>
+    </div>
+</div>
+{% endblock %}
